@@ -12,11 +12,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
-    public void next() {
-        Button buttonIntro = (Button) findViewById(R.id.btn_Login);
-        Intent intent = new Intent(getApplicationContext(), IntroActivity.class);
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, IntroActivity.class);
+
+        Button buttonMain = (Button) findViewById(R.id.btn_Main);
+
         startActivity(intent);
     }
+
+
 }

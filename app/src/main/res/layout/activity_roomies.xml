@@ -47,8 +47,8 @@
         android:textStyle="normal"
         android:textSize="12sp"
         android:text="Look for roomies!"
-        android:id="@+id/btn_Form"
-        android:onClick="next"/>
+        android:id="@+id/btn_Roomies"
+        android:onClick="sendMessage"/>
 
 
 </RelativeLayout>

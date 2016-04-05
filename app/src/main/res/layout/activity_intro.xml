@@ -53,7 +53,7 @@
         android:textSize="12sp"
         android:text="Next"
         android:id="@+id/btn_Intro"
-        android:onClick="next"/>
+        android:onClick="sendMessage"/>
 
 
 </RelativeLayout>

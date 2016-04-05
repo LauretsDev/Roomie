@@ -47,8 +47,8 @@
         android:textStyle="normal"
         android:textSize="12sp"
         android:text="Log in using facebook"
-        android:id="@+id/btn_Login"
-        android:onClick="next"/>
+        android:id="@+id/btn_Main"
+        android:onClick="sendMessage"/>
 
 
 </RelativeLayout>

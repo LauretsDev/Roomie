@@ -3,6 +3,7 @@ package com.roakstudio.roomie;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class FormActivity extends AppCompatActivity {
@@ -12,11 +13,16 @@ public class FormActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
+
+
     }
 
-    public void next() {
-        Button buttonIntro = (Button) findViewById(R.id.btn_Login);
-        Intent intent = new Intent(getApplicationContext(), RoomiesActivity.class);
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, RoomiesActivity.class);
+
+        Button buttonForm = (Button) findViewById(R.id.btn_Form);
+
         startActivity(intent);
     }
+
 }
