@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:text="About Roomie"
         android:layout_marginTop="50dp"
-        android:id="@+id/txtIntroName"
+        android:id="@+id/txt_IntroName"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="25sp"
         />
@@ -22,12 +22,12 @@
         android:layout_centerHorizontal="true"
         android:text="Looking for a place a roommate? Then this is the app for you! Meet potential roommates wherever they may be."
         android:layout_marginTop="15dp"
-        android:layout_below="@id/txtIntroName"
+        android:layout_below="@id/txt_IntroName"
         android:layout_marginLeft="7dp"
         android:layout_marginRight="7dp"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
-        android:id="@+id/txtIntroLooking"
+        android:id="@+id/txt_IntroLooking"
         />
 
     <TextView
@@ -36,7 +36,7 @@
         android:layout_centerHorizontal="true"
         android:text="Roomie highly recomends meeting any potential roommate in person before actually moving in or making any plans together. Get to know them a little first :)"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/txtIntroLooking"
+        android:layout_below="@id/txt_IntroLooking"
         android:layout_marginLeft="7dp"
         android:layout_marginRight="7dp"
         android:textColor="@color/colorPrimaryDark"
@@ -51,7 +51,9 @@
         android:layout_marginBottom="10dp"
         android:textStyle="normal"
         android:textSize="12sp"
-        android:text="Next"/>
+        android:text="Next"
+        android:id="@+id/btn_Intro"
+        android:onClick="next"/>
 
 
 </RelativeLayout>

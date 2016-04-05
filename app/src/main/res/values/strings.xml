@@ -1,3 +1,145 @@
 <resources>
     <string name="app_name">Roomie</string>
+
+    <string name="str_question_1">Country of current residence?</string>
+    <string-array name="str_question_1_choices">
+        <item>Brazil</item>
+    </string-array>
+
+    <string name="str_question_2">State of current residence?</string>
+    <string-array name="str_question_2_choices">
+        <item>Acre</item>
+        <item>Alagoas</item>
+        <item>Amapá</item>
+        <item>Amazonas</item>
+        <item>Bahia</item>
+        <item>Ceará</item>
+        <item>Distrito Federal</item>
+        <item>Espírito Santo</item>
+        <item>Goiás</item>
+        <item>Maranhão</item>
+        <item>Mato Grosso</item>
+        <item>Mato Grosso do Sul</item>
+        <item>Minas Gerais</item>
+        <item>Pará</item>
+        <item>Paraíba</item>
+        <item>Paraná</item>
+        <item>Pernambuco</item>
+        <item>Piauí</item>
+        <item>Rio de Janeiro</item>
+        <item>Rio Grande do Norte</item>
+        <item>Rio Grande do Sul</item>
+        <item>Rondônia</item>
+        <item>Roraima</item>
+        <item>Santa Catarina</item>
+        <item>São Paulo</item>
+        <item>Sergipe</item>
+        <item>Tocantins</item>
+    </string-array>
+
+    <string name="str_question_3">Country of desired residence?</string>
+    <string-array name="str_question_3_choices">
+        <item>Brazil</item>
+    </string-array>
+
+    <string name="str_question_4">State of desired residence?</string>
+    <string-array name="str_question_4_choices">
+        <item>Acre</item>
+        <item>Alagoas</item>
+        <item>Amapá</item>
+        <item>Amazonas</item>
+        <item>Bahia</item>
+        <item>Ceará</item>
+        <item>Distrito Federal</item>
+        <item>Espírito Santo</item>
+        <item>Goiás</item>
+        <item>Maranhão</item>
+        <item>Mato Grosso</item>
+        <item>Mato Grosso do Sul</item>
+        <item>Minas Gerais</item>
+        <item>Pará</item>
+        <item>Paraíba</item>
+        <item>Paraná</item>
+        <item>Pernambuco</item>
+        <item>Piauí</item>
+        <item>Rio de Janeiro</item>
+        <item>Rio Grande do Norte</item>
+        <item>Rio Grande do Sul</item>
+        <item>Rondônia</item>
+        <item>Roraima</item>
+        <item>Santa Catarina</item>
+        <item>São Paulo</item>
+        <item>Sergipe</item>
+        <item>Tocantins</item>
+    </string-array>
+
+    <string name="str_question_5">Maximum you\'re willing to pay for rent?</string>
+    <string-array name="str_question_5_choices">
+        <item>less than 200</item>
+        <item>200 to 499</item>
+        <item>500 to 799</item>
+        <item>800 to 999</item>
+        <item>1000 or more</item>
+    </string-array>
+
+    <string name="str_question_6">Availability to move in?</string>
+    <string-array name="str_question_6_choices">
+        <item>immediately</item>
+        <item>in 1 month</item>
+        <item>in 2 months</item>
+        <item>in 3 months</item>
+        <item>in 4 months</item>
+        <item>in 5 months</item>
+        <item>in 6 months</item>
+        <item>undetermined</item>
+    </string-array>
+
+    <string name="str_question_7">Do you smoke?</string>
+    <string-array name="str_question_7_choices">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="str_question_8">Do you drink?</string>
+    <string-array name="str_question_8_choices">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="str_question_9">Do you use drugs?</string>
+    <string-array name="str_question_9_choices">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="str_question_10">Are you 420 friendly?</string>
+    <string-array name="str_question_10_choices">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="str_question_11">Do you own a pet?</string>
+    <string-array name="str_question_11_choices">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="str_question_12">Are you pet friendly?</string>
+    <string-array name="str_question_12_choices">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="str_question_13">Do you consider yourself organized?</string>
+    <string-array name="str_question_13_choices">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="str_question_14">Do you like to party?</string>
+    <string-array name="str_question_14_choices">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
 </resources>

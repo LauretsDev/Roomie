@@ -10,27 +10,27 @@
         android:layout_height="wrap_content"
         android:text="Welcome to Roomie!"
         android:id="@+id/txtWelcome"
-        android:layout_above="@id/imgLogo"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
         android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         android:textStyle="italic|bold"
-        android:fontFamily="sans-serif-light"/>
+        android:fontFamily="sans-serif-light"
+        android:layout_above="@+id/img_Logo"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/house_logo"
         android:layout_centerInParent="true"
-        android:id="@+id/imgLogo"/>
+        android:id="@+id/img_Logo"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Where you can meet your next roommate"
-        android:id="@+id/txtMotto"
-        android:layout_below="@id/imgLogo"
+        android:id="@+id/txt_Motto"
+        android:layout_below="@+id/img_Logo"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
         android:textColor="@color/colorPrimaryDark"
@@ -46,7 +46,9 @@
         android:layout_marginBottom="10dp"
         android:textStyle="normal"
         android:textSize="12sp"
-        android:text="Log in using facebook"/>
+        android:text="Log in using facebook"
+        android:id="@+id/btn_Login"
+        android:onClick="next"/>
 
 
 </RelativeLayout>

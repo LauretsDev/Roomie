@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:text="Potential Roomies"
         android:layout_marginTop="5dp"
-        android:id="@+id/txtFormHeader"
+        android:id="@+id/txt_FormHeader"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="36sp"
         android:layout_marginLeft="7dp"
@@ -22,8 +22,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtFormHeader"
-        android:layout_above="@id/btnForm"
+        android:layout_below="@+id/txt_FormHeader"
+        android:layout_above="@+id/btn_Form"
         android:layout_marginTop="5dp">
 
 
@@ -47,7 +47,8 @@
         android:textStyle="normal"
         android:textSize="12sp"
         android:text="Look for roomies!"
-        android:id="@+id/btnForm"/>
+        android:id="@+id/btn_Form"
+        android:onClick="next"/>
 
 
 </RelativeLayout>
