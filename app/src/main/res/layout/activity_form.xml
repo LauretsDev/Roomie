@@ -18,13 +18,31 @@
         android:layout_marginRight="7dp"
         />
 
-    <Spinner
-        android:id="@+id/spinnerForm"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt_FormHeader"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_FormHeader"
+        android:layout_above="@+id/btn_Form">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_1"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
 
-        ></Spinner>
+                    />
+
+        </LinearLayout>
+    </ScrollView>
 
 
     <Button
@@ -32,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:textStyle="normal"
         android:textSize="12sp"
         android:text="Look for roomies!"

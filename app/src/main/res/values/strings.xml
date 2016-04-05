@@ -4,6 +4,9 @@
     <string name="str_question_1">Country of current residence?</string>
     <string-array name="str_question_1_choices">
         <item>Brazil</item>
+        <item>United States</item>
+        <item>Canada</item>
+        <item>Russia</item>
     </string-array>
 
     <string name="str_question_2">State of current residence?</string>
