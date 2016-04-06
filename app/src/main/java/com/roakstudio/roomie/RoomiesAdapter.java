@@ -25,7 +25,6 @@ public class RoomiesAdapter extends ArrayAdapter<String> {
         View view = layoutInflater.inflate(R.layout.roomies_row_layout, parent, false);
 
         String tvShow = getItem(position);
-
         TextView textView = (TextView) view.findViewById(R.id.txt_RoomiesRowTextTemplate);
 
         textView.setText(tvShow);
