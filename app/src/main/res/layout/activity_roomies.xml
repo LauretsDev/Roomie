@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:text="@string/str_roomies_potential"
         android:layout_marginTop="5dp"
-        android:id="@+id/txt_FormHeader"
+        android:id="@+id/txt_RoomieHeader"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="36sp"
         android:layout_marginLeft="7dp"
@@ -19,23 +19,16 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
 
-    <ScrollView
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_FormHeader"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_RoomieHeader"
         android:layout_above="@+id/btn_Roomies"
-        android:layout_marginTop="5dp">
+        android:id="@+id/list_roomies">
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
 
-
-        </LinearLayout>
-    </ScrollView>
+    </ListView>
 
 
     <Button
