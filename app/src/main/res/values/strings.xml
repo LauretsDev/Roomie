@@ -1,6 +1,20 @@
 <resources>
     <string name="app_name">Roomie</string>
 
+    <!-- activity_main.xml-->
+    <string name="str_main_welcome">Welcome to Roomie!</string>
+    <string name="str_main_motto">Where you can meet your next roommate</string>
+    <string name="str_main_btn_login">Log in using facebook</string>
+
+    <!-- activity_intro.xml-->
+    <string name="str_intro_about">About Roomie</string>
+    <string name="str_intro_info_one">Looking for a place a roommate? Then this is the app for you! Meet potential roommates wherever they may be.</string>
+    <string name="str_intro_info_two">Roomie highly recommends meeting any potential roommate in person before actually moving in or making any plans together. Get to know them a little first :)</string>
+    <string name="str_intro_btn_next">Next</string>
+
+    <!-- activity_form.xml-->
+    <string name="str_form_help">Help us help you. We\'d like to learn a little about you to better our search so please answer a few questions.</string>
+
     <string name="str_question_1">Country of current residence?</string>
     <string-array name="str_question_1_choices">
         <item>Brazil</item>
@@ -144,5 +158,11 @@
         <item>yes</item>
         <item>no</item>
     </string-array>
+
+    <string name="str_form_btn_look">Look for roomies!</string>
+
+    <!-- activity_roomies.xml-->
+    <string name="str_roomies_potential">Potential Roomies</string>
+    <string name="str_roomies_btn_look">Look for roomies!</string>
 
 </resources>

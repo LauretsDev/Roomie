@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Help us help you. We'd like to learn a little about you to better our search so please answer a few questions. "
+        android:text="@string/str_form_help"
         android:layout_marginTop="5dp"
         android:id="@+id/txt_FormHeader"
         android:textColor="@color/colorPrimaryDark"
@@ -24,22 +24,218 @@
         android:layout_below="@+id/txt_FormHeader"
         android:layout_above="@+id/btn_Form">
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/str_question_1"
                     android:textSize="20sp"
-                    android:layout_marginLeft="7dp"/>
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
                 <Spinner
                     android:id="@+id/spinner1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="5dp" />
 
-                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_2"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_3"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_4"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_5"
+                    android:textSize="20sp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginLeft="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_6"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_7"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_8"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_9"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_10"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_11"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_12"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_13"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_question_14"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="7dp"/>
 
         </LinearLayout>
     </ScrollView>
@@ -53,7 +249,7 @@
         android:layout_marginBottom="5dp"
         android:textStyle="normal"
         android:textSize="12sp"
-        android:text="Look for roomies!"
+        android:text="@string/str_form_btn_look"
         android:id="@+id/btn_Form"
         android:onClick="sendMessage"/>
 

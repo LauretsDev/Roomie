@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Looking for a place a roommate? Then this is the app for you! Meet potential roommates wherever they may be."
+        android:text="@string/str_intro_info_one"
         android:layout_marginTop="15dp"
         android:layout_below="@id/txt_IntroName"
         android:layout_marginLeft="7dp"
@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Roomie highly recomends meeting any potential roommate in person before actually moving in or making any plans together. Get to know them a little first :)"
+        android:text="@string/str_intro_info_two"
         android:layout_marginTop="20dp"
         android:layout_below="@id/txt_IntroLooking"
         android:layout_marginLeft="7dp"
@@ -51,7 +51,7 @@
         android:layout_marginBottom="10dp"
         android:textStyle="normal"
         android:textSize="12sp"
-        android:text="Next"
+        android:text="@string/str_intro_btn_next"
         android:id="@+id/btn_Intro"
         android:onClick="sendMessage"/>
 
