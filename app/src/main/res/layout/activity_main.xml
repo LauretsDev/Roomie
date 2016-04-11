@@ -11,19 +11,20 @@
         android:text="@string/str_main_welcome"
         android:id="@+id/txtWelcome"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="25dp"
         android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         android:textStyle="italic|bold"
-        android:fontFamily="sans-serif-light"
-        android:layout_above="@+id/img_Logo"/>
+        android:fontFamily="sans-serif-light" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/house_logo"
         android:layout_centerInParent="true"
-        android:id="@+id/img_Logo"/>
+        android:id="@+id/img_Logo"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -32,12 +33,40 @@
         android:id="@+id/txt_Motto"
         android:layout_below="@+id/img_Logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="8dp"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="15sp"
         android:textStyle="normal"
         android:layout_marginTop="10dp"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_Main"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/txt_Motto"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your name"
+            android:id="@+id/edit_main_Name"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your email"
+            android:inputType="textEmailAddress"
+            android:id="@+id/edit_main_Email"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your number"
+            android:inputType="phone"
+            android:id="@+id/edit_main_Number"/>
+    </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
