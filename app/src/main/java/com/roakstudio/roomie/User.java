@@ -1,18 +1,20 @@
 package com.roakstudio.roomie;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by Diego Laurentino on 06/04/2016.
  */
-public class User {
+public class User implements Serializable {
 
     private String name;
     private String email;
     private int number;
     private ArrayList<User> listUsers;
     private User user;
+    private String country = "Curitiba, Brazil";
 
     public User() {
 
@@ -65,11 +67,24 @@ public class User {
         this.user = user;
     }
 
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
     public void createList() {
         this.user = new User();
         this.listUsers = new ArrayList<User>();
         for (int i=0;i<10;i++) {
             this.listUsers.add(this.user);
         }
+    }
+
+    @Override
+    public String toString() {
+        return this.name+"\t"+this.country;
     }
 }

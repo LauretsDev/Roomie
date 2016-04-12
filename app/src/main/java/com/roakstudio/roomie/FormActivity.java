@@ -10,16 +10,28 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class FormActivity extends AppCompatActivity {
 
     Spinner spinner1, spinner2, spinner3, spinner4, spinner5, spinner6, spinner7, spinner8, spinner9, spinner10, spinner11, spinner12, spinner13, spinner14;
     ArrayAdapter<CharSequence> adapter1, adapter2, adapter3, adapter4, adapter5, adapter6, adapter7, adapter8, adapter9, adapter10, adapter11, adapter12, adapter13, adapter14;
+    ArrayList<User> users;
+    Button buttonForm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
+        setUI();
+        setActions();
+
+    }
+
+    private void setUI() {
+        users = (ArrayList<User>) getIntent().getSerializableExtra("users");
+        buttonForm = (Button) findViewById(R.id.btn_Form);
 
         //Spinner and Adapter Question 1
         spinner1 = (Spinner) findViewById(R.id.spinner1);
@@ -258,14 +270,20 @@ public class FormActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
-    public void sendMessage(View view) {
+    private void setActions() {
+        buttonForm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nextPage(users);
+            }
+        });
+    }
+
+    public void nextPage(ArrayList<User> users) {
         Intent intent = new Intent(this, RoomiesActivity.class);
-
-        Button buttonForm = (Button) findViewById(R.id.btn_Form);
-
+        intent.putExtra("users", users);
         startActivity(intent);
     }
 

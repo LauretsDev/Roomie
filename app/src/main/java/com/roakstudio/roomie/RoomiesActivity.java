@@ -11,7 +11,10 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class RoomiesActivity extends AppCompatActivity {
+    ArrayList<User> users;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +22,12 @@ public class RoomiesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_roomies);
 
-        String [] favoriteTvShows = {"Penny Dreadful", "The Walking Dead", "Alice in Borderlands", "Anime Show", "South Park", "DBZ", "XXX", "Attack on Titan", "BTOOOM!", "One Punch Man", "Seikoku"};
+        users = (ArrayList<User>) getIntent().getSerializableExtra("user");
 
-        final ListAdapter adapter = new RoomiesAdapter(this, favoriteTvShows);
+       // final ListAdapter adapter = new RoomiesAdapter(this, users);
+
+        final ArrayAdapter<User> adapter = new ArrayAdapter<User>(this,
+                android.R.layout.simple_list_item_1, users);
 
         ListView listView = (ListView) findViewById(R.id.list_roomies);
 
@@ -30,19 +36,14 @@ public class RoomiesActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String tvShowPicked = "You picked "+ String.valueOf(adapter.getItem(position));
-                Toast.makeText(RoomiesActivity.this, tvShowPicked, Toast.LENGTH_SHORT).show();
+                String contactInfo = "Contact Info\n " +
+                        "Name: "+adapter.getItem(position).getName()+
+                        "\nE-mail: "+adapter.getItem(position).getEmail()+
+                        "\nPhone: "+String.valueOf(adapter.getItem(position).getNumber());
+                Toast.makeText(RoomiesActivity.this, contactInfo, Toast.LENGTH_SHORT).show();
             }
         });
 
-    }
-
-    public void sendMessage(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-
-        Button buttonRoomies = (Button) findViewById(R.id.btn_Roomies);
-
-        startActivity(intent);
     }
 
 }

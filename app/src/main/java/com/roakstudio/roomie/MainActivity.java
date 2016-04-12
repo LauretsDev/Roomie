@@ -6,32 +6,58 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonMain;
-
+    Button buttonLogin;
+    EditText editName;
+    EditText editEmail;
+    EditText editPhone;
+    User user;
+    ArrayList<User> users;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        setUI();
+        setActions();
     }
 
-    public void sendMessage(View view) {
+    private void setUI() {
+        buttonLogin = (Button) findViewById(R.id.btn_Main);
+        editName = (EditText) findViewById(R.id.edit_main_Name);
+        editEmail = (EditText) findViewById(R.id.edit_main_Email);
+        editPhone = (EditText) findViewById(R.id.edit_main_Number);
+    }
+
+    private void setActions() {
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = editName.getText().toString();
+                String email = editEmail.getText().toString();
+                int phone = Integer.parseInt(editPhone.getText().toString());
+                user = new User(name, email, phone);
+                users = user.getListUsers();
+                nextPage(users);
+
+            }
+        });
+    }
+
+    public void nextPage(ArrayList<User> users) {
         Intent intent = new Intent(this, IntroActivity.class);
+        intent.putExtra("users", users);
         startActivity(intent);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        buttonMain = (Button) findViewById(R.id.btn_Main);
     }
 
 }
