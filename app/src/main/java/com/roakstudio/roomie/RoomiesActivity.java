@@ -14,7 +14,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class RoomiesActivity extends AppCompatActivity {
-    ArrayList<User> users;
+
+    User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +23,22 @@ public class RoomiesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_roomies);
 
-        users = (ArrayList<User>) getIntent().getSerializableExtra("user");
+     //   String [] favoriteTvShows = {"Penny Dreadful", "The Walking Dead", "Alice in Borderlands", "Anime Show", "South Park", "DBZ", "XXX", "Attack on Titan", "BTOOOM!", "One Punch Man", "Seikoku"};
 
-       // final ListAdapter adapter = new RoomiesAdapter(this, users);
-
-        final ArrayAdapter<User> adapter = new ArrayAdapter<User>(this,
-                android.R.layout.simple_list_item_1, users);
+        user = (User) getIntent().getSerializableExtra("user");
+        String [] roomies = {
+                user.getName(),
+                user.getName(),
+                user.getName(),
+                user.getName(),
+                user.getName(),
+                user.getName(),
+                user.getName(),
+                user.getName(),
+                user.getName(),
+                user.getName()
+        };
+        final ListAdapter adapter = new RoomiesAdapter(this, roomies);
 
         ListView listView = (ListView) findViewById(R.id.list_roomies);
 
@@ -36,10 +47,10 @@ public class RoomiesActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String contactInfo = "Contact Info\n " +
-                        "Name: "+adapter.getItem(position).getName()+
-                        "\nE-mail: "+adapter.getItem(position).getEmail()+
-                        "\nPhone: "+String.valueOf(adapter.getItem(position).getNumber());
+                String contactInfo = "Contact Info\n" +
+                        "Name: "+user.getName() + "\n" +
+                        "E-mail: " + user.getEmail() + "\n" +
+                        "Phone: " + user.getNumber();
                 Toast.makeText(RoomiesActivity.this, contactInfo, Toast.LENGTH_SHORT).show();
             }
         });

@@ -9,8 +9,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="About Roomie"
-        android:layout_marginTop="50dp"
+        android:text="@string/str_intro_about"
+        android:layout_marginTop="20dp"
         android:id="@+id/txt_IntroName"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="25sp"
@@ -52,8 +52,7 @@
         android:textStyle="normal"
         android:textSize="12sp"
         android:text="@string/str_intro_btn_next"
-        android:id="@+id/btn_Intro"
-        android:onClick="sendMessage"/>
+        android:id="@+id/btn_Intro" />
 
 
 </RelativeLayout>

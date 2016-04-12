@@ -1,6 +1,5 @@
 package com.roakstudio.roomie;
 
-import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,15 +8,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
 /**
  * Created by Diego Laurentino on 06/04/2016.
  */
-public class RoomiesAdapter extends ArrayAdapter<User> {
+public class RoomiesAdapter extends ArrayAdapter<String> {
 
-    public RoomiesAdapter(Activity activity, int textViewResourceId, ArrayList<User> user) {
-        super(activity, textViewResourceId, user);
+    public RoomiesAdapter(Context context, String[] resource) {
+        super(context, R.layout.roomies_row_layout,resource);
     }
 
     @Override
@@ -27,10 +24,10 @@ public class RoomiesAdapter extends ArrayAdapter<User> {
 
         View view = layoutInflater.inflate(R.layout.roomies_row_layout, parent, false);
 
-        User user = getItem(position);
+        String roomie = getItem(position);
         TextView textView = (TextView) view.findViewById(R.id.txt_RoomiesRowTextTemplate);
 
-        textView.setText(user.getName());
+        textView.setText(roomie);
 
         ImageView imageView = (ImageView) view.findViewById(R.id.img_RoomiesRowImageTemplate);
 

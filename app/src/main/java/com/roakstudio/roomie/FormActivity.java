@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -16,8 +17,9 @@ public class FormActivity extends AppCompatActivity {
 
     Spinner spinner1, spinner2, spinner3, spinner4, spinner5, spinner6, spinner7, spinner8, spinner9, spinner10, spinner11, spinner12, spinner13, spinner14;
     ArrayAdapter<CharSequence> adapter1, adapter2, adapter3, adapter4, adapter5, adapter6, adapter7, adapter8, adapter9, adapter10, adapter11, adapter12, adapter13, adapter14;
-    ArrayList<User> users;
+    User user;
     Button buttonForm;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +32,10 @@ public class FormActivity extends AppCompatActivity {
     }
 
     private void setUI() {
-        users = (ArrayList<User>) getIntent().getSerializableExtra("users");
+        user = (User) getIntent().getSerializableExtra("user");
         buttonForm = (Button) findViewById(R.id.btn_Form);
+        textView = (TextView) findViewById(R.id.txt_FormHeader);
+        textView.setText("Hi, "+user.getName()+"! "+textView.getText());
 
         //Spinner and Adapter Question 1
         spinner1 = (Spinner) findViewById(R.id.spinner1);
@@ -41,7 +45,7 @@ public class FormActivity extends AppCompatActivity {
         spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -58,7 +62,7 @@ public class FormActivity extends AppCompatActivity {
         spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -75,7 +79,7 @@ public class FormActivity extends AppCompatActivity {
         spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -92,7 +96,7 @@ public class FormActivity extends AppCompatActivity {
         spinner4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -109,7 +113,7 @@ public class FormActivity extends AppCompatActivity {
         spinner5.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -126,7 +130,7 @@ public class FormActivity extends AppCompatActivity {
         spinner6.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -143,7 +147,7 @@ public class FormActivity extends AppCompatActivity {
         spinner7.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -160,7 +164,7 @@ public class FormActivity extends AppCompatActivity {
         spinner8.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -177,7 +181,7 @@ public class FormActivity extends AppCompatActivity {
         spinner9.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -194,7 +198,7 @@ public class FormActivity extends AppCompatActivity {
         spinner10.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -211,7 +215,7 @@ public class FormActivity extends AppCompatActivity {
         spinner11.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -228,7 +232,7 @@ public class FormActivity extends AppCompatActivity {
         spinner12.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -245,7 +249,7 @@ public class FormActivity extends AppCompatActivity {
         spinner13.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -262,7 +266,7 @@ public class FormActivity extends AppCompatActivity {
         spinner14.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+ " selected", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -276,14 +280,15 @@ public class FormActivity extends AppCompatActivity {
         buttonForm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nextPage(users);
+
+                nextPage(user);
             }
         });
     }
 
-    public void nextPage(ArrayList<User> users) {
+    public void nextPage(User user) {
         Intent intent = new Intent(this, RoomiesActivity.class);
-        intent.putExtra("users", users);
+        intent.putExtra("user", user);
         startActivity(intent);
     }
 

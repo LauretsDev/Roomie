@@ -40,8 +40,7 @@
         android:textStyle="normal"
         android:textSize="12sp"
         android:text="@string/str_roomies_btn_look"
-        android:id="@+id/btn_Roomies"
-        android:onClick="sendMessage"/>
+        android:id="@+id/btn_Roomies" />
 
 
 </RelativeLayout>

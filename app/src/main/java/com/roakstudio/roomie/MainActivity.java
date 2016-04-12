@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editEmail;
     EditText editPhone;
     User user;
-    ArrayList<User> users;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,16 +47,15 @@ public class MainActivity extends AppCompatActivity {
                 String email = editEmail.getText().toString();
                 int phone = Integer.parseInt(editPhone.getText().toString());
                 user = new User(name, email, phone);
-                users = user.getListUsers();
-                nextPage(users);
+                nextPage(user);
 
             }
         });
     }
 
-    public void nextPage(ArrayList<User> users) {
+    public void nextPage(User user) {
         Intent intent = new Intent(this, IntroActivity.class);
-        intent.putExtra("users", users);
+        intent.putExtra("user", user);
         startActivity(intent);
     }
 

@@ -250,8 +250,7 @@
         android:textStyle="normal"
         android:textSize="12sp"
         android:text="@string/str_form_btn_look"
-        android:id="@+id/btn_Form"
-        android:onClick="sendMessage"/>
+        android:id="@+id/btn_Form" />
 
 
 </RelativeLayout>

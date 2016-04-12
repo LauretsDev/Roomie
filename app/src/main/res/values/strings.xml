@@ -5,6 +5,9 @@
     <string name="str_main_welcome">Welcome to Roomie!</string>
     <string name="str_main_motto">Where you can meet your next roommate</string>
     <string name="str_main_btn_login">Log in with Google+</string>
+    <string name="str_main_hint_Name">Your name</string>
+    <string name="str_main_hint_Email">Your E-mail</string>
+    <string name="str_main_hint_Phone">Your phone number</string>
 
     <!-- activity_intro.xml-->
     <string name="str_intro_about">About Roomie</string>

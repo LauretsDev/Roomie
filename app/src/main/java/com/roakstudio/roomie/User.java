@@ -83,8 +83,12 @@ public class User implements Serializable {
         }
     }
 
-    @Override
-    public String toString() {
-        return this.name+"\t"+this.country;
+
+    public String[] toStringArray() {
+        String[] roomies = null;
+        for(int i=0;i<10;i++) {
+            roomies[i] = this.name+"\t"+this.country;
+        }
+        return roomies;
     }
 }
