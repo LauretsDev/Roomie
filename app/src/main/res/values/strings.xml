@@ -11,7 +11,7 @@
 
     <!-- activity_intro.xml-->
     <string name="str_intro_about">About Roomie</string>
-    <string name="str_intro_info_one">Looking for a place a roommate? Then this is the app for you! Meet potential roommates wherever they may be.</string>
+    <string name="str_intro_info_one">Looking for a place or a roommate? Then this is the app for you! Meet potential roommates wherever they may be.</string>
     <string name="str_intro_info_two">Roomie highly recommends meeting any potential roommate in person before actually moving in or making any plans together. Get to know them a little first :)</string>
     <string name="str_intro_btn_next">Next</string>
 
